@@ -1,0 +1,86 @@
+<!-- views/index.ejs -->
+<!doctype html>
+<html>
+
+<head>
+    <title>CredMS</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <!-- load fontawesome -->
+</head>
+<style>
+    body,
+    html {
+        height: 100%;
+        margin: 0;
+    }
+
+    .bg {
+        /* The image used */
+        background-image: url("walpaper1.jpg");
+
+        /* Full height */
+        height: 100%;
+
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .centreText {
+        background-color:darkslategray;
+        padding:20px; 
+        left: 0;
+        line-height: 200px;
+        margin: auto;
+        margin-top: -100px;
+        margin-left: 20%;
+        position: absolute;
+        top: 50%;
+        border-radius: 20px;
+    }
+</style>
+
+<body>
+    <div class="bg">
+        <nav class="navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">Folio3 CredMS</a>
+                </div>
+                <ul class="nav navbar-nav">
+                    <li class="active">
+                        <a href="/">Home</a>
+                    </li>
+                </ul>
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="/login" class="btn btn-default">
+                            <span class="fa fa-user"></span> Local Login</a>
+                    </li>
+                    <li>
+                        <a href="/signup" class="btn btn-default">
+                            <span class="fa fa-user"></span> Local Signup</a>
+
+                    </li>
+                    <li>
+                        <a href="/auth/google" class="btn btn-default">
+                            <span class="fa fa-google-plus"></span> Google</a>
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+
+        <div class="centreText">
+            <h1 style="color:white"> Folio3 Netsuite Credential Management System </h1>
+        </div>
+    </div>
+</body>
+
+</html>

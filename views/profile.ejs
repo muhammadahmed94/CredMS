@@ -1,0 +1,39 @@
+<!-- views/signup.ejs -->
+<!doctype html>
+<html>
+
+<head>
+    <title>CredMS</title>
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.2/css/bootstrap.min.css">
+    <!-- load bootstrap css -->
+    <link rel="stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css">
+    <!-- load fontawesome -->
+    <style>
+        body {
+            padding-top: 80px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div style="border:2px solid grey">
+            <div class="col-sm-5 col-sm-offset-1">
+
+                <h2>User Details</h2>
+                <%= user %>
+
+            </div>
+            <div class="col-sm-5 col-sm-offset-1" style="padding-top:25px">
+
+                <a href="/logout">
+                    <b>Logout </b>
+                </a>
+
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>
